@@ -15,6 +15,9 @@
 Route::name('api.')->namespace('Api')->group(function () {
     // Unprotected routes
     Route::group(['middleware' => 'guest:api'], function () {
+        // main task head route
+        Route::post('send-message', 'MessagesController@sendToEmail')->name('sendToEmail');
+
         Route::namespace('Auth')->group(function () {
             Route::post('register', 'RegisterController')->name('register');
         });
