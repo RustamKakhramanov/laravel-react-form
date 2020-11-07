@@ -1,5 +1,6 @@
 import React from 'react';
 import GuestNav from '../components/guest-nav';
+import HomeForm from '../components/HomeForm';
 
 function Welcome () {
   return (
@@ -7,6 +8,7 @@ function Welcome () {
       <GuestNav />
       <div className="flex flex-1 flex-col items-center justify-center">
         <h1 className="text-indigo text-2xl p-2 font-thin uppercase"> Start crafting your app now!</h1>
+          <HomeForm />
       </div>
     </div>
   );
